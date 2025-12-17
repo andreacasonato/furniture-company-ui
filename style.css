@@ -11,6 +11,7 @@
   align-items: center;
 
   padding: 1rem 5rem;
+  position: relative;
 }
 
 .menu-items {
@@ -28,6 +29,20 @@ a {
 
 a:hover {
   font-weight: 500;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #252525;
+  margin-left: auto;
+}
+
+.hamburger:hover {
+  color: #505050;
 }
 
 /* ----- MAIN SECTION ----- */
@@ -224,6 +239,49 @@ footer div {
     padding: 1rem 2rem;
   }
 
+  /* Hamburger menu */
+  @media (max-width: 1024px) {
+    /* Show the hamburger on tablet and mobile */
+    .hamburger {
+      display: block;
+    }
+
+    /* Hide the nav by default on mobile */
+    nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    /* When nav has 'active' class, show it */
+    nav.active {
+      max-height: 300px;
+    }
+
+    /* Stack menu items vertically */
+    .menu-items {
+      flex-direction: column;
+      padding: 1.5rem 2rem;
+      gap: 1rem;
+    }
+
+    .menu-items li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .menu-items li:last-child {
+      border-bottom: none;
+    }
+  }
+
+  /* Main */
   main {
     padding: 3rem 2rem;
   }
