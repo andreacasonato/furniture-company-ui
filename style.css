@@ -15,7 +15,7 @@
 
 .menu-items {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   font-size: 1rem;
   font-family: Inter, sans-serif;
   color: #252525;
@@ -99,6 +99,7 @@ main {
 
 .statistics {
   padding: 5rem 5rem;
+  background-color: #fdfdfd;
 }
 
 .statistics-section {
@@ -152,8 +153,8 @@ main {
 }
 
 .faq-box {
-  background-color: #f1fbff;
-  border: 1px solid #bdecff;
+  background-color: #fffced;
+  border: 0.8px solid #d8cfaa;
   border-radius: 4px;
   width: 400px;
   padding: 24px 32px;
@@ -161,7 +162,7 @@ main {
 }
 
 .faq-box:hover {
-  background-color: #e0f6ff;
+  background-color: #fffae0;
 }
 
 .faq-box p {
@@ -170,14 +171,17 @@ main {
 }
 
 /* ----- FOOTER ----- */
+
 footer div {
   background-color: #fafafa;
   padding: 1.2rem 5rem;
   font-size: 0.8rem;
   font-family: Inter, sans-serif;
+  color: #7d7d7d;
 }
 
 /* ----- MODAL ----- */
+
 .modal {
   position: fixed;
   bottom: 20px;
@@ -188,7 +192,7 @@ footer div {
   background-color: #ff1d37;
   color: #fff;
 
-  border-radius: 8px;
+  border-radius: 4px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
   max-width: 250px;
