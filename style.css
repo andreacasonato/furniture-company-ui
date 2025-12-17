@@ -96,6 +96,7 @@ main {
 }
 
 /* ----- NUMBERS SECTION ----- */
+
 .statistics {
   padding: 5rem 5rem;
 }
@@ -117,6 +118,7 @@ main {
 }
 
 /* ----- FAQ SECTION ----- */
+
 .faq-section {
   padding: 5rem 5rem;
 }
@@ -142,6 +144,7 @@ main {
 }
 
 /* ----- FAQ BOXES ----- */
+
 .faq-questions {
   display: flex;
   flex-direction: column;
@@ -159,4 +162,31 @@ main {
 .faq-box p {
   font-family: Inter, sans-serif;
   color: #252525;
+}
+
+/* ----- MODAL ----- */
+.modal {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  padding: 1rem 1.5rem;
+  font-family: Inter, sans-serif;
+  background-color: #ff1d37;
+  color: white;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  max-width: 250px;
+  cursor: pointer;
+
+  z-index: 1000;
+
+  transition: transform 0.2s ease;
+}
+
+.modal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
