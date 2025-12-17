@@ -156,10 +156,12 @@ main {
   background-color: #fffced;
   border: 0.8px solid #d8cfaa;
   border-radius: 4px;
-  width: 400px;
+  max-width: 500px;
   padding: 24px 32px;
   cursor: pointer;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .faq-box:hover {
@@ -169,17 +171,11 @@ main {
 .faq-box p {
   font-family: Inter, sans-serif;
   color: #252525;
-  display: inline-block;
-  padding-right: 32px;
+  margin-right: 5rem;
 }
 
 .faq-box i {
-  position: absolute;
-  right: 32px;
-  top: 50%;
-  transform: translateY(-50%);
   color: #252525;
-  font-size: 1rem;
 }
 
 /* ----- FOOTER ----- */
@@ -218,4 +214,198 @@ footer div {
 .modal:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  main {
+    padding: 3rem 2rem;
+  }
+
+  .main-section {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .main-text h1 {
+    font-size: 4rem;
+  }
+
+  .main-text p {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .main-images {
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-img-one {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+  }
+
+  .hero-img-two {
+    width: 100%;
+    max-width: 527px;
+    height: auto;
+  }
+
+  .statistics {
+    padding: 3rem 2rem;
+  }
+
+  .statistics-section {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .statistics-box {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .faq-section {
+    padding: 3rem 2rem;
+  }
+
+  .faq-div {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .faq-text p {
+    width: 100%;
+  }
+
+  .faq-box {
+    max-width: 100%;
+  }
+
+  footer div {
+    padding: 1.2rem 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 1.5rem;
+  }
+
+  .menu-items {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 2rem 1.5rem;
+  }
+
+  .main-text h1 {
+    font-size: 3rem;
+  }
+
+  .main-text p {
+    font-size: 0.95rem;
+  }
+
+  .main-text button {
+    max-width: 50%;
+  }
+
+  .statistics {
+    padding: 2rem 1.5rem;
+  }
+
+  .statistics-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .statistics-box span {
+    font-size: 3rem;
+  }
+
+  .faq-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .faq-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .faq-box {
+    padding: 20px 24px;
+  }
+
+  .faq-box i {
+    right: 24px;
+  }
+
+  footer div {
+    padding: 1.2rem 1.5rem;
+    text-align: center;
+  }
+
+  .modal {
+    bottom: 15px;
+    right: 15px;
+    max-width: 200px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 80px;
+    height: auto;
+  }
+
+  .menu-items {
+    gap: 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  main {
+    padding: 2rem 1rem;
+  }
+
+  .main-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-text button {
+    width: 100%;
+  }
+
+  .statistics {
+    padding: 2rem 1rem;
+  }
+
+  .faq-section {
+    padding: 2rem 1rem;
+  }
+
+  .faq-text h2 {
+    font-size: 2rem;
+  }
+
+  footer div {
+    padding: 1rem;
+  }
 }
