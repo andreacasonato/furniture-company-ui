@@ -159,6 +159,7 @@ main {
   width: 400px;
   padding: 24px 32px;
   cursor: pointer;
+  position: relative;
 }
 
 .faq-box:hover {
@@ -168,6 +169,17 @@ main {
 .faq-box p {
   font-family: Inter, sans-serif;
   color: #252525;
+  display: inline-block;
+  padding-right: 32px;
+}
+
+.faq-box i {
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #252525;
+  font-size: 1rem;
 }
 
 /* ----- FOOTER ----- */
