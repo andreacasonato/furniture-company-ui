@@ -1,0 +1,162 @@
+/* ----- HEADER SECTION ----- */
+
+.logo {
+  width: 102px;
+  height: 37px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 5rem;
+}
+
+.menu-items {
+  display: flex;
+  gap: 1rem;
+  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  color: #252525;
+}
+
+a {
+  text-decoration: none;
+  color: #252525;
+}
+
+a:hover {
+  font-weight: 500;
+}
+
+/* ----- MAIN SECTION ----- */
+
+main {
+  padding: 5rem 5rem;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.main-text h1 {
+  font-size: 6rem;
+  font-family: "Playfair Display", sans-serif;
+  color: #252525;
+}
+
+.main-text p {
+  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  color: #919191;
+  line-height: 1.6;
+
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  width: 480px;
+}
+
+.main-text button {
+  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  padding: 12px 18px;
+  border-radius: 4px;
+  background-color: #ffdd44;
+  cursor: pointer;
+  border: 1px solid #ffd82c;
+}
+
+.main-text button:hover {
+  background-color: #ffe46d;
+}
+
+.main-images {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.hero-img-one {
+  width: 650px;
+  height: 247px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-img-two {
+  width: 527px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ----- NUMBERS SECTION ----- */
+.statistics {
+  padding: 5rem 5rem;
+}
+
+.statistics-section {
+  display: flex;
+  gap: 3.3125rem;
+}
+.statistics-box span {
+  font-size: 3.8rem;
+  font-family: "Playfair Display", sans-serif;
+  color: #252525;
+}
+
+.statistics-box p {
+  margin-top: 10px;
+  color: #646464;
+  font-family: Inter, sans-serif;
+}
+
+/* ----- FAQ SECTION ----- */
+.faq-section {
+  padding: 5rem 5rem;
+}
+
+.faq-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-text h2 {
+  font-size: 3rem;
+  font-family: "Playfair Display", sans-serif;
+  color: #252525;
+}
+
+.faq-text p {
+  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  color: #919191;
+  line-height: 1.6;
+  margin-top: 1.5rem;
+  width: 600px;
+}
+
+/* ----- FAQ BOXES ----- */
+.faq-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-box {
+  background-color: #f1fbff;
+  border: 1px solid #bdecff;
+  border-radius: 4px;
+  width: 400px;
+  padding: 24px 32px;
+}
+
+.faq-box p {
+  font-family: Inter, sans-serif;
+  color: #252525;
+}
