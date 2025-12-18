@@ -1,4 +1,5 @@
-// HAMBURGER MENU
+// ===== HAMBURGER MENU =====
+
 const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector("nav");
 const hamburgerIcon = document.querySelector(".hamburger i");
@@ -26,7 +27,7 @@ document.addEventListener("click", (e) => {
   }
 });
 
-// ANIMATED STATISTICS COUNTER
+// ===== ANIMATED STATISTICS COUNTER =====
 
 /*
 - We're selecting the <span> inside each statistic box (that's where the numbers are)
@@ -54,7 +55,8 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(statisticsSection);
 
-//  COUNTING ANIMATION FUNCTION
+//  ===== COUNTING ANIMATION FUNCTION =====
+
 function animateCounter(element, target, duration) {
   let start = 0;
   const increment = target / (duration / 16); // 16ms per frame (60fps)
@@ -71,7 +73,8 @@ function animateCounter(element, target, duration) {
   }, 16);
 }
 
-// FAQ ACCORDION
+// ===== FAQ ACCORDION =====
+
 const faqBoxes = document.querySelectorAll(".faq-box");
 
 // Loop through each FAQ box
