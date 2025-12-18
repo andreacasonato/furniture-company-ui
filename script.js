@@ -70,3 +70,16 @@ function animateCounter(element, target, duration) {
     }
   }, 16);
 }
+
+// FAQ ACCORDION
+const faqBoxes = document.querySelectorAll(".faq-box");
+
+// Loop through each FAQ box
+faqBoxes.forEach((box) => {
+  box.addEventListener("click", () => {
+    // Toggle the 'active' class
+    box.classList.toggle("active");
+
+    console.log("FAQ box clicked!", box);
+  });
+});

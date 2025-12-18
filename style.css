@@ -176,6 +176,8 @@ main {
   cursor: pointer;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
   box-sizing: border-box;
 }
 
@@ -183,14 +185,40 @@ main {
   background-color: #fffae0;
 }
 
-.faq-box p {
+.faq-content {
+  flex: 1;
+}
+
+.faq-question {
   font-family: Inter, sans-serif;
   color: #252525;
-  margin-right: 5rem;
+  font-weight: 500;
+}
+
+.faq-answer {
+  font-family: Inter, sans-serif;
+  color: #646464;
+  line-height: 1.6;
+  margin-top: 0rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, margin-top 0.3s ease;
+}
+
+/* When FAQ box has 'active' class, show the answer */
+.faq-box.active .faq-answer {
+  max-height: 200px;
+  margin-top: 1rem;
+}
+
+/* Rotate the icon when active */
+.faq-box.active i {
+  transform: rotate(45deg);
 }
 
 .faq-box i {
-  color: #252525;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
 }
 
 /* ----- FOOTER ----- */
