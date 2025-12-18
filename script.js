@@ -54,7 +54,7 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(statisticsSection);
 
-// COUNTING ANIMATION FUNCTION
+//  COUNTING ANIMATION FUNCTION
 function animateCounter(element, target, duration) {
   let start = 0;
   const increment = target / (duration / 16); // 16ms per frame (60fps)
@@ -82,4 +82,29 @@ faqBoxes.forEach((box) => {
 
     console.log("FAQ box clicked!", box);
   });
+});
+
+// ===== MODAL POPUP =====
+
+// Select elements
+const redModal = document.querySelector(".modal");
+const modalOverlay = document.querySelector("#modal-overlay");
+const modalClose = document.querySelector(".modal-close");
+
+// Open the center popup when red modal is clicked
+redModal.addEventListener("click", () => {
+  modalOverlay.classList.add("active");
+});
+
+// Close when X button is clicked
+modalClose.addEventListener("click", () => {
+  modalOverlay.classList.remove("active");
+});
+
+// Close when clicking outside the popup (on the dark overlay)
+modalOverlay.addEventListener("click", (e) => {
+  // Check if the click was on the overlay itself, not the popup
+  if (e.target === modalOverlay) {
+    modalOverlay.classList.remove("active");
+  }
 });
