@@ -1,3 +1,4 @@
+// HAMBURGER MENU
 const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector("nav");
 const hamburgerIcon = document.querySelector(".hamburger i");
@@ -12,6 +13,15 @@ hamburger.addEventListener("click", () => {
     hamburgerIcon.className = "fa-solid fa-xmark";
   } else {
     // Menu is closed, show hamburger icon
+    hamburgerIcon.className = "fa-solid fa-bars";
+  }
+});
+
+// Close hamburger menu when clicking outside
+// Listening for clicks on the entire page
+document.addEventListener("click", (e) => {
+  if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+    nav.classList.remove("active");
     hamburgerIcon.className = "fa-solid fa-bars";
   }
 });
