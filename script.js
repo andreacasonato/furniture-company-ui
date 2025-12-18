@@ -111,3 +111,11 @@ modalOverlay.addEventListener("click", (e) => {
     modalOverlay.classList.remove("active");
   }
 });
+
+// Close modal when escape key is pressed
+document.addEventListener("keydown", (e) => {
+  // Check if the pressed key is Escape AND modal is open
+  if (e.key === "Escape" && modalOverlay.classList.contains("active")) {
+    modalOverlay.classList.remove("active");
+  }
+});
