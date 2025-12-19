@@ -49,5 +49,40 @@
         </div>
       </div>
     </header>
+
+    <main class="products-page">
+      <div class="products-container">
+        <!-- Left side: filters -->
+        <aside class="filters-section">
+          <!-- Search Box -->
+          <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search..." />
+          </div>
+
+          <!-- Filter by furniture type -->
+          <div class="filter-category">
+            <h3>Furniture Type</h3>
+            <div class="filter-buttons">
+              <button class="filter-btn active" data-category="all">All</button>
+              <button class="filter-btn" data-category="armchair">
+                Armchair
+              </button>
+              <button class="filter-btn" data-category="sofa">Sofa</button>
+              <button class="filter-btn" data-category="table">Table</button>
+              <button class="filter-btn" data-category="dresser">
+                Dresser
+              </button>
+              <button class="filter-btn" data-category="bed">Bed</button>
+              <button class="filter-btn" data-category="closet">Closet</button>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Right side: products grid (JS will fill this) -->
+        <div class="products-grid">
+          <!-- Products will be put here by JS -->
+        </div>
+      </div>
+    </main>
   </body>
 </html>
