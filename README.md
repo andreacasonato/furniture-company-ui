@@ -1,4 +1,4 @@
-# Furniture company interactive website
+# Furniture Company Interactive Website
 
 This is a fun project made to include a number of JS features.
 There are 2 pages, the homepage and filtering page.
