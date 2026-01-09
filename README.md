@@ -9,7 +9,7 @@ There are 2 pages, the homepage and filtering page.
 - FAQ accordion
 - Modal popup
 
-### On the filtering page:
+### On the filtering page (products page):
 - Products show dynamically on the filtering page 
 - Search box and filter buttons on the left
 
